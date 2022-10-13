@@ -1,0 +1,16 @@
+{
+  "name": "spacestatoin8",
+  "version": "0.9.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jesse Freeman",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-dotnet-cli": "^1.1.0",
+    "gulp-shell": "^0.8.0"
+  }
+}
