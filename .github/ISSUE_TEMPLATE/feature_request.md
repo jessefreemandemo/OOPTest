@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: We'd love to hear any ideas you may have to help make Pixel Vision 8 better.
+about: We'd love to hear any ideas you may have.
 title: ''
 labels: enhancement
 assignees: jessefreeman
