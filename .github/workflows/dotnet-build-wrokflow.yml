@@ -3,7 +3,7 @@ name: OOP Adventure Workflow
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
 
