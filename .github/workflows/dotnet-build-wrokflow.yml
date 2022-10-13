@@ -84,5 +84,4 @@ jobs:
           body: >
             This is a stable build of the OOP Adventure Game's DLL. You'll need .net 6 insalled to play.
           files: >
-            Releases/oop-adventure.dll
-            Releases/oop-adventure.runtimeconfig.json
+            oop-adventure:Releases/
