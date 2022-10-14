@@ -32,7 +32,12 @@ jobs:
           npm install gulp -g
           gulp
       
-      - uses: actions/upload-artifact@v3
+      - name: Upload binaries to release
+        uses: svenstaro/upload-release-action@v2
         with:
-          name: oop-adventure-package
-          path: Releases/
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: Releases/oop-adventure.*
+          asset_name: oop-adventure-package
+          tag: ${{ github.ref }}
+          overwrite: true
+          body: "Download the OOP Adventure Game NuGet Package."
