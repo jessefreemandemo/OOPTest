@@ -1,0 +1,33 @@
+name: OOP Adventure Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+
+  create-release:
+
+    name: "Create Release"
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 6.0.x
+
+      - uses: actions/setup-node@v1
+
+      - run: |
+          npm install
+          gulp
+      
+      
+      - uses: actions/upload-artifact@v3
+        with:
+          name: oop-adventure-package
+          path: Releases/
