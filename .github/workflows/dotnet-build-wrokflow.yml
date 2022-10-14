@@ -46,9 +46,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      # - name: Unshallow
-      #   run: git fetch --prune --unshallow
-
       # Figure out what the CURRENT tag should be
       - id: compute_tag
         uses: craig-day/compute-tag@v10
