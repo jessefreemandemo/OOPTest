@@ -14,18 +14,19 @@ jobs:
 
     steps:
 
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-        uses: actions/setup-dotnet@v1
+      - uses: actions/setup-dotnet@v1
         with:
           dotnet-version: 6.0.x
 
-        uses: actions/setup-node@v1
+      - uses: actions/setup-node@v1
 
-        run: |
+      - run: |
           npm install
           npm install gulp -g
           gulp
+      
       
       - uses: actions/upload-artifact@v3
         with:
