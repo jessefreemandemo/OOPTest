@@ -31,13 +31,8 @@ jobs:
           npm install
           npm install gulp -g
           gulp
-          
-      - name: Update Release
-        uses: meeDamian/github-release@2.0
+      
+      - uses: actions/upload-artifact@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          gzip: true
-          body: >
-            This is a stable build of the OOP Adventure Game's NuGet package.
-          files: >
-            oop-adventure:Releases/
+          name: oop-adventure-package
+          path: Releases/
